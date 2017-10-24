@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:padding="10dp"
+        android:layout_centerVertical="true"
+        android:text="@string/choose_tiff_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+        <Button
+            android:padding="10dp"
+            android:id="@+id/frag_choose_done"
+            android:text="@string/confirm"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line_gray"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v4.view.ViewPager
+            android:id="@+id/frag_choose_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <com.merhold.extensiblepageindicator.ExtensiblePageIndicator
+            android:id="@+id/flexibleIndicator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:indicatorRadius="12dp"
+            app:indicatorPadding="32dp"
+            app:indicatorInactiveColor="@color/background_blue"
+            app:indicatorActiveColor="@color/colorAccent"
+            android:layout_marginBottom="60dp"
+            android:layout_gravity="bottom" />
+    </FrameLayout>
+
+</LinearLayout>

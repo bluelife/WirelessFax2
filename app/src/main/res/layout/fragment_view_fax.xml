@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ProgressBar
+        android:id="@+id/detail_progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+    <LinearLayout
+        android:id="@+id/detail_control_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#373634"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/signText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawablePadding="4dp"
+                android:drawableTop="@drawable/detail_sign_pen"
+                android:gravity="center"
+                android:text="签字"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_margin="6dp"
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/signImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawablePadding="4dp"
+                android:drawableTop="@drawable/detail_sign_image"
+                android:gravity="center"
+                android:text="签章"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:orientation="vertical"
+            android:layout_margin="6dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/detail_reward"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawablePadding="4dp"
+                android:drawableTop="@drawable/detail_reward"
+                android:gravity="center"
+                android:text="转发"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:orientation="vertical"
+            android:layout_margin="6dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/detail_print"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawablePadding="4dp"
+                android:drawableTop="@drawable/printer"
+                android:gravity="center"
+                android:text="打印"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/detail_del"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawablePadding="4dp"
+                android:drawableTop="@drawable/detail_del"
+                android:gravity="center"
+                android:text="删除"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/detail_content"
+        android:layout_above="@id/detail_control_panel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line_gray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/email_detail_head"
+            android:orientation="vertical"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:id="@+id/txtSender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="来自刘总的合同"
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="6dp">
+
+                <TextView
+                    android:id="@+id/txtTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="策士公司 1589999999 发至 我" />
+
+                <TextView
+                    android:id="@+id/txtTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    android:text="5:20 PM" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line_gray" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <android.support.v4.view.ViewPager
+                android:id="@+id/frag_choose_viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+            <com.merhold.extensiblepageindicator.ExtensiblePageIndicator
+                android:id="@+id/flexibleIndicator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:indicatorRadius="4dp"
+                app:indicatorPadding="8dp"
+                app:indicatorInactiveColor="@color/background_blue"
+                app:indicatorActiveColor="@color/colorAccent"
+                android:layout_marginBottom="20dp"
+                android:layout_gravity="bottom" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

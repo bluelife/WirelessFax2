@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_send_box"
+            android:icon="@drawable/assets_senticon"
+            android:title="@string/send_box" />
+        <item
+            android:id="@+id/nav_recv_box"
+            android:icon="@drawable/assets_inboxicon"
+            android:title="@string/recv_box" />
+        <item
+            android:id="@+id/nav_draft_box"
+            android:icon="@drawable/assets_drafticon"
+            android:title="@string/draft_box" />
+        <item
+            android:id="@+id/nav_star_box"
+            android:icon="@drawable/assets_importanticon"
+            android:title="@string/star_box" />
+    </group>
+
+    <item android:title="其他">
+        <menu>
+            <item
+                android:id="@+id/nav_phonebook_box"
+                android:icon="@drawable/assets_tabbarcontactsicon"
+                android:title="@string/phonebook_box" />
+            <item
+                android:id="@+id/nav_setting_box"
+                android:icon="@drawable/tools"
+                android:title="@string/setting_box" />
+            <item
+                android:id="@+id/nav_exit"
+                android:icon="@drawable/tools"
+                android:title="退出" />
+        </menu>
+
+    </item>
+
+</menu>

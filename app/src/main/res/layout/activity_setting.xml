@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_setting"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="wirelessfax.phonelink.com.cn.wirelessfax.SettingActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/toolbarlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            app:navigationIcon="@drawable/action_back"
+            android:navigationIcon="@drawable/action_back"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary" />
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <LinearLayout
+        android:id="@+id/nameLayout"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbarlayout"
+        android:layout_marginLeft="8dp"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:text="原密码："
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/textView"
+            />
+
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_weight="1"
+            android:id="@+id/editOldPassword" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/newpasswordLayout"
+        android:layout_marginLeft="8dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nameLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:text="新密码："
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/textView3" />
+
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_weight="1"
+            android:id="@+id/editNewPassword" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/newpasswordLayout"
+        android:layout_marginLeft="8dp"
+        android:id="@+id/senderlayout"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="公章:"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView5" />
+
+        <TextView
+            android:text="公章路径"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtMagePath"
+            android:layout_weight="4"/>
+
+        <Button
+            android:text="选择公章"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnSelectImage" />
+    </LinearLayout>
+</RelativeLayout>

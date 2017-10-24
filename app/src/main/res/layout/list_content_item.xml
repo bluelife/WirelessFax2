@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp">
+
+    <ImageView
+        android:id="@+id/imgRead"
+        android:background="@drawable/img_guide_point_select"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="6dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+
+    <RelativeLayout
+        android:layout_toRightOf="@+id/imgRead"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        >
+        <LinearLayout
+            android:id="@+id/linearTitleTime"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginRight="6dp"
+            >
+
+            <TextView
+                android:text="@string/sender"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:id="@+id/txtSender"
+                android:layout_weight="8"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:text="@string/time"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:id="@+id/txtTime"
+                android:layout_weight="1"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+        <TextView
+            android:layout_below="@+id/linearTitleTime"
+            android:text="@string/subject"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginRight="6dp"
+            android:id="@+id/txtSubject"
+            android:textSize="15sp" />
+    </RelativeLayout>
+</RelativeLayout>

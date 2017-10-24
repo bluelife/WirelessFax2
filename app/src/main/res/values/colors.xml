@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorBackground">#ffffff</color>
+
+    <color name="background_blue">#014099</color>
+    <color name="line_gray">#cacaca</color>
+    <color name="email_detail_head">#efefef</color>
+
+    <color name="little_grey">#EBEBEB</color>
+    <color name="middle_grey">#CACACA</color>
+    <color name="grey">#DAD9DB</color>
+    <color name="trans">#00000000</color>
+</resources>

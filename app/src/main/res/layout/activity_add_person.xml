@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_person"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="wirelessfax.phonelink.com.cn.wirelessfax.AddPersonActivity">
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/toolbarlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            app:navigationIcon="@drawable/action_back"
+            android:navigationIcon="@drawable/action_back"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:id="@+id/nameLayout"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbarlayout"
+        android:layout_marginLeft="3dp"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:text="姓名："
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/textView"
+            />
+
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_weight="1"
+            android:id="@+id/editPersonName" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginLeft="3dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nameLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:text="传真号："
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/textView3" />
+
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_weight="1"
+            android:id="@+id/editNumber" />
+    </LinearLayout>
+</RelativeLayout>

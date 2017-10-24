@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    android:background="#FF585657">
+
+    <TextView
+        android:id="@+id/txtProgressTitle"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:text="正在发送传真..."
+        android:textColor="#FFFFFFFF"
+        android:layout_marginTop="10dp"
+        android:background="#FF585657" />
+
+
+
+   <LinearLayout
+        android:id="@+id/layoutProgressLine"
+        android:layout_width="180dp"
+        android:layout_height="2dp"
+        android:orientation="vertical"
+        android:background="#FFCCCCCC"
+        android:layout_margin="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/txtProgressTitle" >
+      </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="15dp"
+        android:indeterminate="false"
+        android:indeterminateDrawable="@drawable/frame_loading" 
+        android:layout_below="@+id/layoutProgressLine"/>
+
+
+</RelativeLayout>
+
+

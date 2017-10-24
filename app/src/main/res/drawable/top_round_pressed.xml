@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <gradient
+        android:angle="90"
+        android:endColor="@color/middle_grey"
+        android:startColor="@color/middle_grey" />
+
+    <!--设置圆角 上方圆角点击-->
+    <corners
+        android:bottomLeftRadius="0dp"
+        android:bottomRightRadius="0dp"
+        android:topLeftRadius="5dp"
+        android:topRightRadius="5dp" />
+</shape>
